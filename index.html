@@ -282,23 +282,16 @@
       content: "Design Graphic"; 
   } 
 }
-* {
-  margin: 0;
-  padding: 0;
-}
+
 
 
 .glowing {
-  position: absolute;
-  min-width: 700px;
-  height: 100%;
-  margin: -150px;
-  transform-origin: right;
+
+  transform-origin: center;
   animation: colorChange 5s linear infinite;
 }
-
 .glowing:nth-child(even) {
-  transform-origin: left;
+  transform-origin: center;
 }
 
 @keyframes colorChange {
