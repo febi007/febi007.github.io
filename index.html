@@ -239,15 +239,16 @@
     left:15%;
 }
 #hideMe {
-    -moz-animation: cssAnimation 0s ease-in 0.4s forwards;
+    -moz-animation: cssAnimation 0s ease-in 5s forwards;
     /* Firefox */
-    -webkit-animation: cssAnimation 0s ease-in 0.4s forwards;
+    -webkit-animation: cssAnimation 0s ease-in 5s forwards;
     /* Safari and Chrome */
-    -o-animation: cssAnimation 0s ease-in 0.4s forwards;
+    -o-animation: cssAnimation 0s ease-in 5s forwards;
     /* Opera */
-    animation: cssAnimation 0s ease-in 0.4s forwards;
+    animation: cssAnimation 0s ease-in 5s forwards;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
+
 }
 @keyframes cssAnimation {
     to {
@@ -263,6 +264,138 @@
         visibility:hidden;
     }
 }
+.ganti::before{
+    content: "IT Support"; 
+    animation: animate infinite 8s; 
+}
+@keyframes animate { 
+  
+  0% { 
+      content: "IT Support"; 
+  } 
+
+  50% { 
+      content: "FrontEnd Developer"; 
+  } 
+
+  75% { 
+      content: "Design Graphic"; 
+  } 
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.glowing {
+  position: absolute;
+  min-width: 700px;
+  height: 100%;
+  margin: -150px;
+  transform-origin: right;
+  animation: colorChange 5s linear infinite;
+}
+
+.glowing:nth-child(even) {
+  transform-origin: left;
+}
+
+@keyframes colorChange {
+  0% {
+    filter: hue-rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.glowing span {
+  position: absolute;
+  top: calc(80px * var(--i));
+  left: calc(80px * var(--i));
+  bottom: calc(80px * var(--i));
+  right: calc(80px * var(--i));
+}
+
+.glowing span::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -8px;
+  width: 15px;
+  height: 15px;
+  background: #f00;
+  border-radius: 50%;
+}
+
+.glowing span:nth-child(3n + 1)::before {
+  background: rgba(134,255,0,1);
+  box-shadow: 0 0 20px rgba(134,255,0,1),
+    0 0 40px rgba(134,255,0,1),
+    0 0 60px rgba(134,255,0,1),
+    0 0 80px rgba(134,255,0,1),
+    0 0 0 8px rgba(134,255,0,.1);
+}
+
+.glowing span:nth-child(3n + 2)::before {
+  background: rgba(255,214,0,1);
+  box-shadow: 0 0 20px rgba(255,214,0,1),
+    0 0 40px rgba(255,214,0,1),
+    0 0 60px rgba(255,214,0,1),
+    0 0 80px rgba(255,214,0,1),
+    0 0 0 8px rgba(255,214,0,.1);
+}
+
+.glowing span:nth-child(3n + 3)::before {
+  background: rgba(0,226,255,1);
+  box-shadow: 0 0 20px rgba(0,226,255,1),
+    0 0 40px rgba(0,226,255,1),
+    0 0 60px rgba(0,226,255,1),
+    0 0 80px rgba(0,226,255,1),
+    0 0 0 8px rgba(0,226,255,.1);
+}
+
+.glowing span:nth-child(3n + 1) {
+  animation: animate 10s alternate infinite;
+}
+
+.glowing span:nth-child(3n + 2) {
+  animation: animate-reverse 3s alternate infinite;
+}
+
+.glowing span:nth-child(3n + 3) {
+  animation: animate 8s alternate infinite; 
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-reverse {
+  0% {
+    transform: rotate(360deg);
+  }
+  
+  50% {
+    transform: rotate(180deg);
+  }
+  
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 
 </style>
 <div id="hideMe" class="wrapper">
@@ -274,7 +407,48 @@
     <div class="shadow"></div>
     <span>Loading</span>
 </div>
+<div class="glowing">
+    
+    <span style="--i:1;"></span>
+    
+    <span style="--i:2;"></span>
+    
+    <span style="--i:3;"></span>
+    
+  </div>
+  
+  <div class="glowing">
+    
+    <span style="--i:1;"></span>
+    
+    <span style="--i:2;"></span>
+    
+    <span style="--i:3;"></span>
+    
+  </div>
+  
+  <div class="glowing">
+    
+    <span style="--i:1;"></span>
+    
+    <span style="--i:2;"></span>
+    
+    <span style="--i:3;"></span>
+    
+  </div>
+  
+  <div class="glowing">
+    
+    <span style="--i:1;"></span>
+    
+    <span style="--i:2;"></span>
+    
+    <span style="--i:3;"></span>
+    
+  </div>
 <body>
+  
+      
 <section id="semua">
         <!--=============== HEADER ===============-->
         <header class="header" id="header">
@@ -327,7 +501,7 @@
             <section class="home section" id="home">
                 <div class="home__container container grid">
                     <div class="home__data">
-                        <span class="home__greeting">Hello, I'm IT Support</span>
+                        <h1 class="home__greeting">Hello, I'm <span class="ganti"></span></h1>
                         <h1 class="home__name">Febi Febiansyah S.Tr.T</h1>
                         <h3 class="home__education"><i class='bx bxs-graduation'></i></i>Politeknik TEDC Bandung</h3>
     
@@ -1047,9 +1221,22 @@
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
 </section>
-    
-
-    
+<script>
+        document.onreadystatechange = function () {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                    "#semua").style.visibility = "hidden";
+                document.querySelector(
+                    "#hideMe").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                    "#hideMe").style.display = "none";
+                document.querySelector(
+                    "#semua").style.visibility = "visible";
+            }
+        };
+        
+    </script>
 </body>
 
 </html>
