@@ -28,6 +28,24 @@
     <title> Febi Portfolio </title>
 </head>
 <style>
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .work__container  {
+    grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  padding-top: 1rem;
+}
+.work__container2{
+    grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  padding-top: 1rem;
+}
+.work__card2{
+    width: 100%;
+}
+}
+
+
 
 .timeline {
   position: relative;
@@ -684,7 +702,7 @@
                             <div class="about__box">
                                 <i class='bx bx-briefcase-alt about__icon'></i>
                                 <h3 class="about__title">Completed</h3>
-                                <span class="about__subtitle">48+ Projects</span>
+                                <span class="about__subtitle">20+ Projects</span>
                             </div>
                             <div class="about__box">
                                 <i class='bx bx-support about__icon'></i>
@@ -728,28 +746,28 @@
                                 <div class="col-md-12">
                                     <h2 class="skills__title">CERTIFICATE</h2>     
                                     <div class="work__container2 container grid">
-                                        <div class="work__card mix">
+                                        <div class="work__card2 mix">
                                             <img src="assets/images/ser/poltek.png" alt="" class="work__img">
                                         </div>
-                                        <div class="work__card mix">
+                                        <div class="work__card2 mix">
                                             <img src="assets/images/ser/mos.png" alt="" class="work__img">
                                         </div>
-                                        <div class="work__card mix">
+                                        <div class="work__card2 mix">
                                             <img src="assets/images/ser/security.png" alt="" class="work__img">
                                         </div>
-                                        <div class="work__card mix">
+                                        <div class="work__card2 mix">
                                             <img src="assets/images/ser/funda.png" alt="" class="work__img">
                                         </div>
-                                        <div class="work__card mix">
+                                        <div class="work__card2 mix">
                                             <img src="assets/images/ser/cloud.png" alt="" class="work__img">
                                         </div>
-                                        <div class="work__card mix">
+                                        <div class="work__card2 mix">
                                             <img src="assets/images/ser/ccna.png" alt="" class="work__img">
                                         </div>
-                                        <div class="work__card mix">
+                                        <div class="work__card2 mix">
                                             <img src="assets/images/ser/database.png" alt="" class="work__img">
                                         </div>
-                                        <div class="work__card mix">
+                                        <div class="work__card2 mix">
                                             <img src="assets/images/ser/trans.png" alt="" class="work__img">
                                         </div>
                                     </div>        
@@ -1067,80 +1085,166 @@
                         <img src="assets/images/poltek.jpg" alt="" class="work__img">
     
                         <h3 class="work__title">Compro Politeknik TEDC Bandung</h3>
-    
+                        <span class="services__button">
+                            Detail <i class='bx bx-right-arrow services__icon'></i>
+                        </span>
                         <!-- <a href="#" class="work__button">
                             Demo <i class='bx bx-right-arrow work__icon'></i>
                         </a> -->
+                    </div>
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+                            <img src="assets/images/poltek.jpg" alt="" class="">
+
+                        </div>
                     </div>
     
                     <div class="work__card mix web">
                         <img src="assets/images/thaibah.png" alt="" class="work__img">
     
                         <h3 class="work__title">PT Thaibah Internasional</h3>
+                        <span class="services__button">
+                            Detail <i class='bx bx-right-arrow services__icon'></i>
+                        </span>
     
                         <!-- <a href="#" class="work__button">
                             Demo <i class='bx bx-right-arrow work__icon'></i>
                         </a> -->
+                    </div>
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+                            <img src="assets/images/thaibah.png" alt="" class="">
+
+                        </div>
                     </div>
     
                     <div class="work__card mix web">
                         <img src="assets/images/smk.png" alt="" class="work__img">
     
                         <h3 class="work__title">Compro & Perpustakaan<br>Smkn 14 Bandung</h3>
+                        <span class="services__button">
+                            Detail <i class='bx bx-right-arrow services__icon'></i>
+                        </span>
     
                         <!-- <a href="#" class="work__button">
                             Demo <i class='bx bx-right-arrow work__icon'></i>
                         </a> -->
+                    </div>
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+                            <img src="assets/images/smk.png" alt="" class="">
+
+                        </div>
                     </div>
     
                     <div class="work__card mix web">
                         <img src="assets/images/travel_rev.png" alt="" class="work__img">
     
                         <h3 class="work__title">Travel Umroh</h3>
+                        <span class="services__button">
+                            Detail <i class='bx bx-right-arrow services__icon'></i>
+                        </span>
     
                         <!-- <a href="#" class="work__button">
                             Demo <i class='bx bx-right-arrow work__icon'></i>
                         </a> -->
+                    </div>
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+                            <img src="assets/images/travel_rev.png" alt="" class="">
+
+                        </div>
                     </div>
     
                     <div class="work__card mix android">
                         <img src="assets/images/retail_rev.png" alt="" class="work__img">
     
                         <h3 class="work__title">Point Of Sales (POS)</h3>
+                        <span class="services__button">
+                            Detail <i class='bx bx-right-arrow services__icon'></i>
+                        </span>
     
                         <!-- <a href="#" class="work__button">
                             Demo <i class='bx bx-right-arrow work__icon'></i>
                         </a> -->
                     </div>
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+                            <img src="assets/images/retail_rev.png" alt="" class="">
+
+                        </div>
+                    </div>
+
+
                     <div class="work__card mix web">
                         <img src="assets/images/ecomerce_rev.png" alt="" class="work__img">
     
                         <h3 class="work__title">Ecommerce <br>Indokids & Miski Frozen</h3>
+                        <span class="services__button">
+                            Detail <i class='bx bx-right-arrow services__icon'></i>
+                        </span>
     
                         <!-- <a href="#" class="work__button">
                             Demo <i class='bx bx-right-arrow work__icon'></i>
                         </a> -->
                     </div>
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+                            <img src="assets/images/ecomerce_rev.png" alt="" class="">
+
+                        </div>
+                    </div>
+
+
                     <div class="work__card mix android">
                         <img src="assets/images/f&b_rev.png" alt="" class="work__img">
     
                         <h3 class="work__title">F & B Apps</h3>
+                        <span class="services__button">
+                            Detail <i class='bx bx-right-arrow services__icon'></i>
+                        </span>
     
                         <!-- <a href="#" class="work__button">
                             Demo <i class='bx bx-right-arrow work__icon'></i>
                         </a> -->
+                    </div>
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+                            <img src="assets/images/f&b_rev.png" alt="" class="">
+
+                        </div>
                     </div>
                     <div class="work__card mix android">
                         <img src="assets/images/fintech_apps.png" alt="" class="work__img">
     
                         <h3 class="work__title">Fintech Apps</h3>
+                        <span class="services__button">
+                            Detail <i class='bx bx-right-arrow services__icon'></i>
+                        </span>
     
                         <!-- <a href="#" class="work__button">
                             Demo <i class='bx bx-right-arrow work__icon'></i>
                         </a> -->
                     </div>
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+                            <img src="assets/images/fintech_apps.png" alt="" class="">
+
+                        </div>
+                    </div>
                     <div class="work__card mix android">
                         <img src="assets/images/e-commerce_apps.png" alt="" class="work__img">
+                        <span class="services__button">
+                            Detail <i class='bx bx-right-arrow services__icon'></i>
+                        </span>
     
                         <h3 class="work__title">Ecommerce Apps</h3>
     
@@ -1148,23 +1252,52 @@
                             Demo <i class='bx bx-right-arrow work__icon'></i>
                         </a> -->
                     </div>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+                            <img src="assets/images/e-commerce_apps.png" alt="" class="">
+
+                        </div>
+                    </div>
                     <div class="work__card mix web">
                         <img src="assets/images/amanpalestin.png" alt="" class="work__img">
     
                         <h3 class="work__title">Crowdfunding <br>Amanpalestine</h3>
+                        <span class="services__button">
+                            Detail <i class='bx bx-right-arrow services__icon'></i>
+                        </span>
     
                         <!-- <a href="#" class="work__button">
                             Demo <i class='bx bx-right-arrow work__icon'></i>
                         </a> -->
                     </div>
+                    
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+                            <img src="assets/images/amanpalestin.png" alt="" class="">
+
+                        </div>
+                    </div>
                     <div class="work__card mix web">
                         <img src="assets/images/utara.png" alt="" class="work__img">
     
                         <h3 class="work__title">Compro Utara</h3>
+                        <span class="services__button">
+                            Detail <i class='bx bx-right-arrow services__icon'></i>
+                        </span>
     
                         <!-- <a href="#" class="work__button">
                             Demo <i class='bx bx-right-arrow work__icon'></i>
                         </a> -->
+                    </div>
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+                            <img src="assets/images/utara.png" alt="" class="">
+
+                        </div>
                     </div>
     
                 </div>

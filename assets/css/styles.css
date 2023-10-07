@@ -961,9 +961,13 @@ body.light-theme {
 }
 
 @media screen and (min-width: 435px) {
-  .work__container {
+  /* .work__container {
     justify-content: center;
     grid-template-columns: repeat(2, max-content);
+  } */
+  .work__container {
+    grid-template-columns: 145px;
+    justify-content: center;
   }
   .work__container2 {
     justify-content: center;
