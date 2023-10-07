@@ -267,9 +267,9 @@
 }
 .ganti::before{
     content: "IT Support"; 
-    animation: animate infinite 8s; 
+    animation: textAnimasi infinite 8s; 
 }
-@keyframes animate { 
+@keyframes textAnimasi { 
   
   0% { 
       content: "IT Support"; 
@@ -284,7 +284,15 @@
   } 
 }
 
-
+.work__filters{
+    position: relative;
+}
+.services__button{
+    position: relative;
+}
+.home__button{
+    position: relative;
+}
 
 .glowing {
   position: fixed;
@@ -393,13 +401,25 @@
   }
 }
 
-body {
+#semua {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
 	&.loaded {
 		overflow-y: auto;
 	}
+}
+#hapusSaya {
+  animation: hideAnimation 0s ease-in 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hideAnimation {
+  to {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
 }
 
 .overlay {
@@ -507,7 +527,7 @@ body {
 	}
 }
 </style>
-<div class="overlay">
+<div class="overlay" id="hapusSaya">
 	<div class="overlayDoor"></div>
 	<div class="overlayContent">
 		<div class="loader">
